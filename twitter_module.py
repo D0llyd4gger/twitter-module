@@ -148,6 +148,7 @@ def fullExtractionData(authentfile,parametres, request_type, restart={False:""})
 			sys.exit(1)
 		liste=[]
 		i=1
+		# ici seulement 10 iterations pour test, max 450
 		while i < 10:
 			data=extraction(access_token,parametres, request_type)
 			liste.append(data)
